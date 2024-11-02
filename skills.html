@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>skills</title>
+         <link rel="stylesheet" href="style.css">
+         <style>
+       body {
+    background-color: rgb(12, 12, 12);
+        }
+        h1 {
+            margin: 40px;
+        }
+        .progressbar {
+            padding: 25px 30px;
+            width: 1300px;
+            box-shadow: 5px 5px 20px rgba(100, 90, 99, 0.3);
+        }
+        .progressbar .bar {
+            margin: 30px;
+        }
+        .progressbar .bar .subject .span {
+            font-weight: 500;
+            font-size: 17px;
+            opacity: 0;
+            animation: showtext 0.5s 0.5s linear forwards;
+        }
+        @keyframes showtext {
+            100%{
+            opacity: 1;
+            }
+        }
+        .progressbar .bar .bar-line {
+            height: 6px;
+            width: 100%;
+            background: rgb(161, 147, 173);
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: left;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(30, 19, 19);
+            animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+        }
+        @keyframes animate {
+            100%{
+                transform: scaleX(1);
+            }
+        }
+        .bar .bar-line span {
+            height: 6px;
+            position: absolute;
+            border-radius: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            background-color:  rgb(102, 55, 146);
+            animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+        }
+        .bar .html span {
+            width: 90%;
+        } 
+        .bar .css span {
+            width: 80%;
+        } 
+        .bar .javascript span {
+            width: 50%;
+        } 
+        .bar .java span {
+            width: 40%;
+        } 
+        .bar .c span {
+            width: 70%;
+        } 
+        .bar .reactjs span {
+            width: 30%;
+        } 
+        .bar-line span::before {
+            position: absolute;
+            content: "";
+            top: -10px;
+            right: 0;
+            height: 0;
+            width: 0;
+            border-top-color: black;
+            opacity: 0;
+            animation: showtext 0.5s 1.5s linear forwards;
+        }
+        .bar-line span::after {
+            position: absolute;
+            content: "";
+            top: -28px;
+            right: 0;
+            font-weight: 500;
+            color: white;
+            padding: 1px 8px;
+            font-size: 12px;
+            border-radius: 3px;
+            opacity: 0;
+            animation: showtext2 0.5s 1.5s linear forwards;
+        }
+        @keyframes showtext2 {
+            100%{
+                opacity: 1;
+            }
+        }
+        .html span::after{
+            content: "90%";
+            font-size: 23px;
+        }
+        .css span::after{
+            content: "80%";
+            font-size: 23px;
+        }
+        .javascript span::after{
+            content: "50%";
+            font-size: 23px;
+        }
+        .java span::after{
+            content: "40%";
+            font-size: 23px;
+        }
+        .c span::after{
+            content: "70%";
+            font-size: 23px;
+        }
+        .reactjs span::after{
+            content: "30%";
+            font-size: 23px;
+        }
+         </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+         <div class="left"> My Portfolio</div>
+         <div class="right">
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="careerObjective.html">Career Objective</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contactMe.html">Contact Me</a></li>
+            </ul>
+         </div>
+        </nav>
+        </header>
+        <main>
+   <center> <h1>Skills</h1></center>
+   <div class="progressbar">
+    <div class="bar">
+        <div class="subject">
+            <span>HTML</span>
+        </div>
+        <div class="bar-line html">
+            <span></span>
+        </div>
+    </div>
+    <div class="bar">
+        <div class="subject">
+            <span>CSS</span>
+        </div>
+        <div class="bar-line css">
+            <span></span>
+        </div>
+    </div>
+    <div class="bar">
+        <div class="subject">
+            <span>Javascript</span>
+        </div>
+        <div class="bar-line javascript">
+            <span></span>
+        </div>
+    </div>
+    <div class="bar">
+        <div class="subject">
+            <span>C</span>
+        </div>
+        <div class="bar-line c">
+            <span></span>
+        </div>
+    </div>
+    <div class="bar">
+        <div class="subject">
+            <span>Java</span>
+        </div>
+        <div class="bar-line java">
+            <span></span>
+        </div>
+    </div>
+    <div class="bar">
+        <div class="subject">
+            <span>React Js</span>
+        </div>
+        <div class="bar-line reactjs">
+            <span></span>
+        </div>
+    </div>
+   </div>
+   </main>
+   <footer></footer>
+   </body>
+   </html>
